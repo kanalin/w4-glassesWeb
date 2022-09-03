@@ -1,0 +1,130 @@
+// 字體大小
+.text-sm{
+    font-size: $font-size-sm;
+}
+.text-base{
+    font-size: $font-size-base;
+}
+.text-xl{
+    font-size: $font-size-xl;
+}
+.text-2xl{
+    font-size: $font-size-2xl;
+}
+.text-4xl{
+    font-size: $font-size-4xl;
+}
+.text-5xl{
+    font-size: $font-size-5xl;
+}
+.text-6xl{
+    font-size: $font-size-6xl;
+}
+// 字重
+.fw-medium{
+    font-weight: $font-weight-medium;
+}
+.fw-bold{
+    font-weight: $font-weight-bold;
+}
+.fw-black{
+    font-weight: $font-weight-black;
+}
+// 留白
+.p-16{
+    padding: 16px;
+}
+.pt-32{
+    padding-top: 32px;
+}
+.pt-80{
+    padding-top: 80px;
+}
+.pb-8{
+    padding-bottom: 8px;
+}
+.pb-24{
+    padding-bottom: 24px;
+}
+.pb-32{
+    padding-bottom: 32px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.ps-16{
+    padding-left: 16px;
+}
+// 間距
+.mt-8{
+    margin-top: 8px;
+}
+.mt-96{
+    margin-top: 96px;
+}
+.mb-8{
+    margin-bottom: 8px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-48{
+    margin-bottom: 48px;
+}
+.mb-72{
+    margin-bottom: 72px;
+}
+.me-16{
+    margin-left: 16px;
+}
+.me-22{
+    margin-right: 22px;
+}
+.me-32{
+    margin-right: 32px;
+}
+.me-48{
+    margin-right: 48px;
+}
+.me-64{
+    margin-right: 64px;
+}
+// flex
+.d-flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+// icon設定
+.material-symbols-sharp{
+    vertical-align: middle;
+}
+
+.container{
+    max-width: $container-pc;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin: 0 auto;
+    @include pad(){
+        max-width: $container-pad;
+    }
+    @include phone(){
+        max-width: $container-phone;
+    }
+}

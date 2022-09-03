@@ -1,0 +1,62 @@
+header{
+    background-color: $bg-primary;
+    .logo a{
+        display: block;
+        width: 80px;
+        height: 48px;
+        background-image: url(../../../assets/images/logo-white.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    ul{
+        display: flex;
+        a{
+            display: block;
+            color: $text-white;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            &:hover{
+                color: $text-primary;
+            }
+        }
+    }
+    .menu{
+        @include phone(){
+            display: none;
+        }
+    }
+    .ham-icon{
+        display: none;
+        span{
+            font-size: 30px;
+        }
+        @include phone(){
+            display: block;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-right: 20px;
+            padding-left: 20px;
+            color: $text-white;
+        }
+    }
+    .dropdown{
+        display: none;
+        ul{
+            display: block;
+            text-align: center;
+            li{
+                border-top: 1px solid white;
+            }
+        }
+    }
+    .active{
+        display: block;
+    }
+}
+

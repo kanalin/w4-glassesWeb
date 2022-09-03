@@ -1,0 +1,67 @@
+footer{
+    background-color: $bg-primary;
+    padding-top: 48px;
+    @include phone(){
+        padding-top: 24px;
+    }
+    a{
+        color: $text-white;
+        display: block;
+        &:hover{
+            color: $text-primary;
+        }
+    }
+    .menu {
+        @include phone(){
+            display: none;
+        }
+        a{
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
+    .contact, .material-symbols-sharp{
+        @include phone(){
+            font-size: $font-size-base;
+        }
+    }
+    .contact{
+        @include phone(){
+            padding-bottom: 24px;
+        }
+    }
+    .social-link{
+        img{
+            width: 48px;
+            @include pad(){
+                width: 40px;
+            }
+            @include phone(){
+                width: 24px;
+            }
+        }
+        a:hover{
+            opacity: 0.6;
+        }
+        @include phone(){
+            li{
+                margin-right: 8px;
+            }
+        }
+    } 
+}
+.copyright{
+    border-top: 1px solid $text-white;
+    color: $text-white;
+    @include phone(){
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        ul{
+            display: block;
+            li{
+                margin-top: 8px;
+            }
+        }
+    }
+}
