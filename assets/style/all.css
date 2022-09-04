@@ -493,6 +493,10 @@ nav {
         .submit-opinion .btn input {
           width: 100%; } }
 
+@media (max-width: 767px) {
+  .fqa {
+    padding-bottom: 40px; } }
+
 .fqa h2 {
   border-left: 8px solid #9F1213; }
   @media (max-width: 767px) {
@@ -508,9 +512,5 @@ nav {
 @media (max-width: 767px) {
   .fqa ul li {
     margin-bottom: 24px; } }
-
-@media (max-width: 767px) {
-  .fqa {
-    padding-bottom: 40px; } }
 
 /*# sourceMappingURL=all.css.map */
